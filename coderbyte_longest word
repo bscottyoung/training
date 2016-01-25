@@ -1,0 +1,21 @@
+def LongestWord(sen)
+    sen1=sen.split(" ")
+    x=0
+    longest_word_length=0
+sen1.each do |word|
+    puts "word=#{word}"
+    if word.length > longest_word_length
+        puts "1. wordlength=#{word.length}"
+      longest_word=word
+      longest_word_length=word.length
+      puts "2. longest_word=#{longest_word} that is #{longest_word_length} long"
+    end
+    puts "3. longest_word=#{longest_word} that is #{longest_word_length} long"
+end
+    puts "4. return longest_word=" + longest_word
+    return longest_word
+         
+end
+
+sen="a jerk is just dandy"
+puts "longestword=" + LongestWord(sen)
